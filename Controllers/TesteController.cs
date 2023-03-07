@@ -41,13 +41,13 @@ namespace TesteMVC5.Controllers
 
         public RedirectToRouteResult RedirectToRouteResult()
         {
-            /*return RedirectToRoute(new
+            return RedirectToRoute(new
             {
                 controller = "Home",
                 action = "Index"
-            });*/
+            });
 
-            return RedirectToAction("Index");
+            //return RedirectToAction("Index");
         }
     }
 }
