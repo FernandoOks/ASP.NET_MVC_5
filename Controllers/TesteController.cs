@@ -9,13 +9,13 @@ namespace TesteMVC5.Controllers
     [RoutePrefix("testes")]
     public class TesteController : Controller
     {
-        [Route]
-        public ActionResult IndexTeste()
+        [Route("{id2:int/{texto:maxlength(50)}")]
+        public ActionResult IndexTeste(int id2, string texto)
         {
             return View();
         }
 
-        [Route("um-outro-teste")]
+        [Route("{texto:maxlength(50)}/um-outro-teste/{id2:int}")]
         public ActionResult IndexTeste2()
         {
             return View("IndexTeste");
