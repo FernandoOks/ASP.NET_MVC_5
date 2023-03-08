@@ -43,11 +43,11 @@ namespace TesteMVC5.Controllers
         {
             /*return RedirectToRoute(new
             {
-                controller = "Home",
-                action = "Index"
+                controller = "Teste",
+                action = "IndexTeste"
             });*/
 
-            return RedirectToAction("Index");
+            return RedirectToAction("IndexTeste", "Teste");
         }
     }
 }
