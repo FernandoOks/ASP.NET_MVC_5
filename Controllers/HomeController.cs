@@ -20,7 +20,7 @@ namespace TesteMVC5.Controllers
             return View();
         }
 
-        [Route("intitucional/entre-em-contato")]
+        [Route("institucional/entre-em-contato")]
         public ActionResult Contact()
         {
             return View();
